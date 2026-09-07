@@ -1,0 +1,8 @@
+def factorial_tail(n, accumulator=1):
+    if n == 0:
+        return accumulator
+    return factorial_tail(n - 1, n * accumulator)
+
+num = 5
+result = factorial_tail(num)
+print(f"Factorial of {num} is: {result}")
